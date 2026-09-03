@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
+    "buildgithub": "slidev build --base /diversecofee030926/",    
     "dev": "slidev --open",
     "export": "slidev export"
   },
