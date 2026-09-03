@@ -1,0 +1,98 @@
+<svg viewBox="0 0 360 470" width="330" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="ar2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- A: Write detailed spec -->
+  <rect x="90" y="6" width="180" height="26" rx="6" fill="#1e3a5f" fill-opacity="0.15" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="180" y="23" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="600">Write detailed spec</text>
+
+  <!-- A→B -->
+  <line x1="180" y1="32" x2="180" y2="40" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- B: Start Claude Code -->
+  <rect x="100" y="44" width="160" height="26" rx="6" fill="#1e3a5f" fill-opacity="0.15" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="180" y="61" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="600">Start Claude Code</text>
+
+  <!-- B→C -->
+  <line x1="180" y1="70" x2="180" y2="78" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- C: Task fits spec? (diamond) -->
+  <polygon points="180,80 250,100 180,120 110,100" fill="#713f12" fill-opacity="0.15" stroke="#facc15" stroke-width="1.5"/>
+  <text x="180" y="104" text-anchor="middle" fill="#facc15" font-size="10" font-weight="600">Task fits spec?</text>
+
+  <!-- C→D (Yes, left) -->
+  <line x1="110" y1="100" x2="100" y2="100" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+  <text x="104" y="92" fill="#4ade80" font-size="9" font-weight="600">Yes</text>
+
+  <!-- D: Implement (green, dead-end) -->
+  <rect x="20" y="87" width="80" height="26" rx="6" fill="#14532d" fill-opacity="0.15" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="60" y="104" text-anchor="middle" fill="#4ade80" font-size="10" font-weight="600">Implement</text>
+
+  <!-- C→E (No, down) -->
+  <line x1="180" y1="120" x2="180" y2="128" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+  <text x="190" y="127" fill="#fb923c" font-size="9" font-weight="600">No, edge case</text>
+
+  <!-- E: Improvise -->
+  <rect x="100" y="132" width="160" height="26" rx="6" fill="#7c2d12" fill-opacity="0.15" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="180" y="149" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="600">Improvise</text>
+
+  <!-- E→F -->
+  <line x1="180" y1="158" x2="180" y2="166" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- F: Spec diverges from code -->
+  <rect x="80" y="170" width="200" height="26" rx="6" fill="#7c2d12" fill-opacity="0.15" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="180" y="187" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="600">Spec diverges from code</text>
+
+  <!-- F→G -->
+  <line x1="180" y1="196" x2="180" y2="204" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- G: Spec now outdated -->
+  <rect x="90" y="208" width="180" height="26" rx="6" fill="#7c2d12" fill-opacity="0.15" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="180" y="225" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="600">Spec now outdated</text>
+
+  <!-- G→H -->
+  <line x1="180" y1="234" x2="180" y2="242" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- H: Stop updating spec -->
+  <rect x="95" y="246" width="170" height="26" rx="6" fill="#7f1d1d" fill-opacity="0.15" stroke="#f87171" stroke-width="1.5"/>
+  <text x="180" y="263" text-anchor="middle" fill="#f87171" font-size="11" font-weight="600">Stop updating spec</text>
+
+  <!-- H→I -->
+  <line x1="180" y1="272" x2="180" y2="280" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- I: Full live coding mode -->
+  <rect x="90" y="284" width="180" height="26" rx="6" fill="#7f1d1d" fill-opacity="0.15" stroke="#f87171" stroke-width="1.5"/>
+  <text x="180" y="301" text-anchor="middle" fill="#f87171" font-size="11" font-weight="600">Full live coding mode</text>
+
+  <!-- I→J -->
+  <line x1="180" y1="310" x2="180" y2="318" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- J: CLAUDE.md rules forgotten -->
+  <rect x="80" y="322" width="200" height="26" rx="6" fill="#7f1d1d" fill-opacity="0.20" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="180" y="339" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="600">CLAUDE.md rules forgotten</text>
+
+  <!-- J→K -->
+  <line x1="180" y1="348" x2="180" y2="356" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- K: Code quality degrades -->
+  <rect x="85" y="360" width="190" height="26" rx="6" fill="#7f1d1d" fill-opacity="0.20" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="180" y="377" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="600">Code quality degrades</text>
+
+  <!-- K→L -->
+  <line x1="180" y1="386" x2="180" y2="394" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- L: Manual review required -->
+  <rect x="80" y="398" width="200" height="26" rx="6" fill="#7f1d1d" fill-opacity="0.25" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="180" y="415" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">Manual review required</text>
+
+  <!-- L→M -->
+  <line x1="180" y1="424" x2="180" y2="432" stroke="#64748b" stroke-width="1.5" marker-end="url(#ar2)"/>
+
+  <!-- M: Time reviewing > time saved -->
+  <rect x="55" y="436" width="250" height="26" rx="6" fill="#7f1d1d" fill-opacity="0.30" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="180" y="453" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">Time reviewing &gt; time saved</text>
+
+</svg>

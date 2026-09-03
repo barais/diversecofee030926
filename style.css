@@ -1,0 +1,29 @@
+/* style.css — chargé automatiquement par Slidev */
+
+/* Réduire la taille de base globale */
+:root {
+  --slidev-code-font-size: 0.8rem;
+  --slidev-code-line-height: 1.35;
+}
+
+/* Réduire les titres du thème seriph */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+
+/* Texte courant plus compact */
+.slidev-layout p,
+.slidev-layout li {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+/* Tableaux plus compacts */
+.slidev-layout table {
+  font-size: 0.82rem;
+}
+
+/* Mermaid plus petit */
+.slidev-layout .mermaid {
+  font-size: 0.75rem;
+}
