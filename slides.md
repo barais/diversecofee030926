@@ -910,7 +910,7 @@ class: text-center
 
 <v-clicks>
 
-### Claude is a productive coder
+### Claude could be a productive coder
 
 ### Claude is **not** a security engineer
 
